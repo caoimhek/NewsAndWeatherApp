@@ -1,0 +1,59 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+	<ion-navbar>
+		<ion-title>Settings</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+	<ion-item>
+		<ion-label position="stacked"> City:  </ion-label>
+		<ion-input [(ngModel)]="city"></ion-input>
+	</ion-item>
+
+
+
+
+
+	<ion-item>
+		<h1>Settings</h1></ion-item>
+
+		<h2> Units: {{ units }}
+		</h2>
+
+
+		<ion-list radio-group [(ngModel)]="units">
+			
+			
+			<ion-item>
+				<ion-label> Standard</ion-label>
+				<ion-radio value="Standard"> 
+				</ion-radio>
+			</ion-item>
+
+
+			<ion-item>
+				<ion-label> Metric</ion-label>
+				<ion-radio value="metric"></ion-radio>
+			</ion-item>
+
+			<ion-item>
+				<ion-label> Imperial</ion-label>
+				<ion-radio value="imperial"> </ion-radio>
+			</ion-item>
+		</ion-list>
+
+
+		<button (click)="save()"ion-button> Save</button>    
+
+
+
+
+	</ion-content>
